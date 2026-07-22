@@ -54,7 +54,12 @@ void main() {
 String _pathFor(String type, int index) {
   switch (type) {
     case 'video':
-      return 'assets/videos/sample.mp4';
+      const videoUrls = [
+        'https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny_320x180.mp4',
+        'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+      ];
+      return videoUrls[index % videoUrls.length];
     case 'audio':
       return 'assets/audios/sample.mp3';
     case 'pdf':

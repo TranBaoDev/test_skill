@@ -5,6 +5,7 @@ import '../../blocs/lesson_list/lesson_list_bloc.dart';
 import '../../blocs/lesson_list/lesson_list_event.dart';
 import '../../blocs/lesson_list/lesson_list_state.dart';
 import '../../data/models/lesson.dart';
+import 'video_player_screen.dart';
 
 class LessonListScreen extends StatelessWidget {
   final int courseId;
@@ -59,10 +60,22 @@ class _LessonTile extends StatelessWidget {
       leading: Icon(_iconFor(lesson.type)),
       title: Text(lesson.title),
       subtitle: Text(lesson.type),
-      onTap: () {
-        // TODO: điều hướng tới màn hình xem nội dung theo type (bước tiếp theo)
-      },
+      onTap: () => _onTap(context),
     );
+  }
+
+  void _onTap(BuildContext context) {
+    switch (lesson.type) {
+      case 'video':
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => VideoPlayerScreen(lesson: lesson)),
+        );
+        break;
+      default:
+        // Audio/PDF/Image/Quiz sẽ nối ở các bước tiếp theo
+        break;
+    }
   }
 
   IconData _iconFor(String type) {

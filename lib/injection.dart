@@ -8,7 +8,9 @@ import 'data/models/quiz_question.dart';
 import 'data/models/quiz_answer.dart';
 import 'data/models/bookmark.dart';
 import 'data/repositories/lesson_repository.dart';
+import 'data/repositories/watch_progress_repository.dart';
 import 'data/services/database_service.dart';
+import 'data/services/video_controller_pool.dart';
 
 final getIt = GetIt.instance;
 
@@ -26,8 +28,12 @@ Future<void> setupInjection() async {
     directory: dir.path,
   );
 
-  await DatabaseService.seedIfEmpty(isar); // <-- thêm dòng này
+  await DatabaseService.seedIfEmpty(isar);
 
   getIt.registerSingleton<Isar>(isar);
   getIt.registerSingleton<LessonRepository>(LessonRepository(isar));
+  getIt.registerSingleton<WatchProgressRepository>(
+      WatchProgressRepository(isar));
+  getIt
+      .registerSingleton<VideoControllerPool>(VideoControllerPool(maxAlive: 2));
 }
