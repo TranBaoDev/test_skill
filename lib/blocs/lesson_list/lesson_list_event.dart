@@ -8,9 +8,10 @@ abstract class LessonListEvent extends Equatable {
 
 class LessonListStarted extends LessonListEvent {
   final int courseId;
-  const LessonListStarted(this.courseId);
+  final String? type;
+  const LessonListStarted(this.courseId, {this.type});
   @override
-  List<Object?> get props => [courseId];
+  List<Object?> get props => [courseId, type];
 }
 
 class LessonListNextPageRequested extends LessonListEvent {

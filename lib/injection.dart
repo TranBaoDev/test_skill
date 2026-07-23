@@ -7,6 +7,7 @@ import 'data/models/watch_progress.dart';
 import 'data/models/quiz_question.dart';
 import 'data/models/quiz_answer.dart';
 import 'data/models/bookmark.dart';
+import 'data/repositories/course_repository.dart';
 import 'data/repositories/lesson_repository.dart';
 import 'data/repositories/watch_progress_repository.dart';
 import 'data/services/database_service.dart';
@@ -36,4 +37,5 @@ Future<void> setupInjection() async {
       WatchProgressRepository(isar));
   getIt
       .registerSingleton<VideoControllerPool>(VideoControllerPool(maxAlive: 2));
+  getIt.registerSingleton<CourseRepository>(CourseRepository(isar));
 }

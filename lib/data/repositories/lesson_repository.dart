@@ -1,13 +1,25 @@
 import 'package:isar/isar.dart';
 import '../models/lesson.dart';
-import '../models/watch_progress.dart';
 
 class LessonRepository {
   final Isar isar;
   LessonRepository(this.isar);
 
-  Future<List<Lesson>> getLessonsPage(int courseId,
-      {required int offset, required int limit}) {
+  Future<List<Lesson>> getLessonsPage(
+    int courseId, {
+    required int offset,
+    required int limit,
+    String? type,
+  }) {
+    if (type != null) {
+      return isar.lessons
+          .filter()
+          .courseIdEqualTo(courseId)
+          .typeEqualTo(type)
+          .offset(offset)
+          .limit(limit)
+          .findAll();
+    }
     return isar.lessons
         .filter()
         .courseIdEqualTo(courseId)
