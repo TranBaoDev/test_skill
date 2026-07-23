@@ -1,6 +1,7 @@
 class MockData {
   final List<MockCourse> courses;
-  MockData(this.courses);
+  final List<MockQuizQuestion> quizQuestions;
+  MockData(this.courses, this.quizQuestions);
 }
 
 class MockCourse {
@@ -29,5 +30,22 @@ class MockLesson {
     required this.type,
     required this.contentPath,
     this.durationMs,
+  });
+}
+
+class MockQuizQuestion {
+  final int id;
+  final int quizId;
+  final String question;
+  final String? imagePath;
+  final String? audioPath;
+  final List<String> options;
+  MockQuizQuestion({
+    required this.id,
+    required this.quizId,
+    required this.question,
+    this.imagePath,
+    this.audioPath,
+    required this.options,
   });
 }

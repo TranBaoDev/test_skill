@@ -16,6 +16,7 @@ class LessonRepository {
           .filter()
           .courseIdEqualTo(courseId)
           .typeEqualTo(type)
+          .sortByCourseId() // đảm bảo thứ tự ổn định, không đổi giữa các lần load trang
           .offset(offset)
           .limit(limit)
           .findAll();
@@ -23,6 +24,7 @@ class LessonRepository {
     return isar.lessons
         .filter()
         .courseIdEqualTo(courseId)
+        .sortByCourseId()
         .offset(offset)
         .limit(limit)
         .findAll();
@@ -32,6 +34,7 @@ class LessonRepository {
     return isar.lessons
         .filter()
         .titleContains(query, caseSensitive: false)
+        .sortByCourseId()
         .limit(limit)
         .findAll();
   }
