@@ -9,14 +9,23 @@ import 'video_player_screen.dart';
 
 class LessonListScreen extends StatelessWidget {
   final int courseId;
-  const LessonListScreen({super.key, required this.courseId});
+  final String? typeFilter;
+  final String screenTitle;
+
+  const LessonListScreen({
+    super.key,
+    required this.courseId,
+    this.typeFilter,
+    this.screenTitle = 'Bài học',
+  });
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => LessonListBloc(getIt())..add(LessonListStarted(courseId)),
+      create: (_) => LessonListBloc(getIt())
+        ..add(LessonListStarted(courseId, type: typeFilter)),
       child: Scaffold(
-        appBar: AppBar(title: const Text('Bài học')),
+        appBar: AppBar(title: Text(screenTitle)),
         body: BlocBuilder<LessonListBloc, LessonListState>(
           buildWhen: (prev, curr) => prev.lessons.length != curr.lessons.length,
           builder: (context, state) {

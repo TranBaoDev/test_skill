@@ -8,6 +8,7 @@ class LessonListBloc extends Bloc<LessonListEvent, LessonListState> {
   final LessonRepository repository;
   static const pageSize = 30;
   late int _courseId;
+  String? _typeFilter;
 
   LessonListBloc(this.repository) : super(const LessonListState()) {
     on<LessonListStarted>(_onStarted);
@@ -19,11 +20,13 @@ class LessonListBloc extends Bloc<LessonListEvent, LessonListState> {
     Emitter<LessonListState> emit,
   ) async {
     _courseId = event.courseId;
+    _typeFilter = event.type;
     emit(const LessonListState(isLoading: true));
     final firstPage = await repository.getLessonsPage(
       _courseId,
       offset: 0,
       limit: pageSize,
+      type: _typeFilter,
     );
     emit(LessonListState(
       lessons: firstPage,
@@ -41,6 +44,7 @@ class LessonListBloc extends Bloc<LessonListEvent, LessonListState> {
       _courseId,
       offset: state.lessons.length,
       limit: pageSize,
+      type: _typeFilter,
     );
     emit(state.copyWith(
       lessons: [...state.lessons, ...nextPage],
