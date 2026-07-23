@@ -69,10 +69,17 @@ class VideoPlayerCubit extends Cubit<VideoPlayerState> {
   }
 
   @override
+  @override
   Future<void> close() async {
     state.controller?.removeListener(_onControllerUpdate);
     _saveThrottle?.cancel();
-    await flushPosition(); // đảm bảo không mất vị trí xem khi rời màn hình
+
+    // Bắt buộc pause trước khi đóng Cubit — vì VideoControllerPool
+    // vẫn giữ controller sống (để tái sử dụng theo LRU), nếu không
+    // pause thủ công thì video sẽ tiếp tục phát ở nền sau khi pop màn hình.
+    await state.controller?.pause();
+    await flushPosition();
+
     return super.close();
   }
 }
