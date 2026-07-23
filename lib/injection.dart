@@ -9,6 +9,7 @@ import 'data/models/quiz_answer.dart';
 import 'data/models/bookmark.dart';
 import 'data/repositories/course_repository.dart';
 import 'data/repositories/lesson_repository.dart';
+import 'data/repositories/quiz_repository.dart';
 import 'data/repositories/watch_progress_repository.dart';
 import 'data/services/database_service.dart';
 import 'data/services/video_controller_pool.dart';
@@ -38,4 +39,5 @@ Future<void> setupInjection() async {
   getIt
       .registerSingleton<VideoControllerPool>(VideoControllerPool(maxAlive: 2));
   getIt.registerSingleton<CourseRepository>(CourseRepository(isar));
+  getIt.registerSingleton<QuizRepository>(QuizRepository(isar));
 }
