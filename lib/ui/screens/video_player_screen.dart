@@ -7,12 +7,19 @@ import '../../blocs/video_player/video_player_state.dart';
 import '../../blocs/app_lifecycle/app_lifecycle_cubit.dart';
 import '../../data/models/lesson.dart';
 
+import '../../data/models/lesson_extensions.dart';
+
 class VideoPlayerScreen extends StatelessWidget {
   final Lesson lesson;
-  const VideoPlayerScreen({super.key, required this.lesson});
+  final int? lessonNumber;
+  const VideoPlayerScreen({super.key, required this.lesson, this.lessonNumber});
 
   @override
   Widget build(BuildContext context) {
+    final title = lessonNumber != null
+        ? 'Bài $lessonNumber: ${lesson.displayTitle}'
+        : lesson.displayTitle;
+
     return BlocProvider(
       key: ValueKey(lesson.id),
       create: (_) => VideoPlayerCubit(
@@ -20,7 +27,7 @@ class VideoPlayerScreen extends StatelessWidget {
         progressRepository: getIt(),
         lessonId: lesson.id,
       )..load(lesson.contentPath),
-      child: _VideoPlayerView(title: lesson.title),
+      child: _VideoPlayerView(title: title),
     );
   }
 }

@@ -20,26 +20,33 @@ class VideoPlayerCubit extends Cubit<VideoPlayerState> {
   Future<void> load(String path) async {
     try {
       final controller = await pool.getController(lessonId, path);
+      if (isClosed) return; // guard sau await đầu tiên
 
-      // Khôi phục đúng vị trí đang xem trước khi thoát app / rời màn hình
       final saved = await progressRepository.getProgress(lessonId);
+      if (isClosed) return; // guard sau await thứ hai
+
       if (saved != null && saved.positionMs > 0) {
         await controller.seekTo(Duration(milliseconds: saved.positionMs));
+        if (isClosed) return;
       }
 
       controller.addListener(_onControllerUpdate);
       emit(state.copyWith(controller: controller, isInitialized: true));
+
       await controller.play();
     } catch (_) {
-      emit(state.copyWith(isLoadError: true));
+      if (!isClosed) {
+        emit(state.copyWith(isLoadError: true));
+      }
     }
   }
 
   void _onControllerUpdate() {
+    if (isClosed)
+      return; // guard vì listener có thể fire ngay lúc close() đang chạy
     final controller = state.controller;
     if (controller == null || !controller.value.isInitialized) return;
 
-    // Throttle ghi DB — không ghi mỗi frame, chỉ ghi tối đa 1 lần / 2 giây
     _saveThrottle?.cancel();
     _saveThrottle = Timer(const Duration(seconds: 2), () {
       _persistCurrentPosition();
@@ -54,32 +61,26 @@ class VideoPlayerCubit extends Cubit<VideoPlayerState> {
   }
 
   Future<void> pause() async {
+    if (isClosed) return;
     await state.controller?.pause();
   }
 
   Future<void> play() async {
+    if (isClosed) return;
     await state.controller?.play();
   }
 
-  /// Gọi khi app vào background hoặc rời màn hình —
-  /// ghi vị trí NGAY, không chờ throttle 2 giây.
   Future<void> flushPosition() async {
     _saveThrottle?.cancel();
     await _persistCurrentPosition();
   }
 
   @override
-  @override
   Future<void> close() async {
     state.controller?.removeListener(_onControllerUpdate);
     _saveThrottle?.cancel();
-
-    // Bắt buộc pause trước khi đóng Cubit — vì VideoControllerPool
-    // vẫn giữ controller sống (để tái sử dụng theo LRU), nếu không
-    // pause thủ công thì video sẽ tiếp tục phát ở nền sau khi pop màn hình.
-    await state.controller?.pause();
     await flushPosition();
-
+    await state.controller?.pause();
     return super.close();
   }
 }

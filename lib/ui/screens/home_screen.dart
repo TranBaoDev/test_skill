@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_skill/ui/screens/search_screen.dart';
 import '../../data/models/ui_models.dart';
 import 'explore_screen.dart';
+import 'history_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -104,19 +105,20 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Row(
         children: [
           IconButton(
-            icon: const Icon(Icons.menu, color: Color(0xFF1B1D28)),
-            onPressed: () {},
-          ),
+              icon: const Icon(Icons.menu, color: Color(0xFF1B1D28)),
+              onPressed: () {}),
           Expanded(
-            child: Text(
-              'Edu Care',
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
-                color: Color(0xFF1B1D28),
-              ),
-            ),
+            child: Text('Edu Care',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1B1D28))),
+          ),
+          IconButton(
+            icon: const Icon(Icons.history_rounded, color: Color(0xFF1B1D28)),
+            onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (_) => const HistoryScreen())),
           ),
           IconButton(
             icon: const Icon(Icons.search, color: Color(0xFF1B1D28)),

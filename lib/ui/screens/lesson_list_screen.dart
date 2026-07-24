@@ -2,11 +2,16 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../data/models/lesson_extensions.dart';
 import '../../injection.dart';
 import '../../blocs/lesson_list/lesson_list_bloc.dart';
 import '../../blocs/lesson_list/lesson_list_event.dart';
 import '../../blocs/lesson_list/lesson_list_state.dart';
 import '../../data/models/lesson.dart';
+import '../widgets/bookmark_button.dart';
+import 'audio_player_screen.dart';
+import 'image_viewer_screen.dart';
+import 'pdf_viewer_screen.dart';
 import 'quiz_screen.dart';
 import 'video_player_screen.dart';
 
@@ -153,7 +158,7 @@ class _LessonCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        _cleanTitle(lesson.title),
+                        lesson.displayTitle,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
@@ -197,7 +202,14 @@ class _LessonCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                Icon(Icons.chevron_right_rounded, color: Colors.grey.shade400),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    BookmarkButton(lessonId: lesson.id),
+                    Icon(Icons.chevron_right_rounded,
+                        color: Colors.grey.shade400),
+                  ],
+                ),
               ],
             ),
           ),
@@ -211,12 +223,41 @@ class _LessonCard extends StatelessWidget {
       case 'video':
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => VideoPlayerScreen(lesson: lesson)),
+          MaterialPageRoute(
+            builder: (_) =>
+                VideoPlayerScreen(lesson: lesson, lessonNumber: displayIndex),
+          ),
+        );
+        break;
+      case 'audio':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) =>
+                AudioPlayerScreen(lesson: lesson, lessonNumber: displayIndex),
+          ),
+        );
+        break;
+      case 'pdf':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) =>
+                PdfViewerScreen(lesson: lesson, lessonNumber: displayIndex),
+          ),
+        );
+        break;
+      case 'image':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) =>
+                ImageViewerScreen(lesson: lesson, lessonNumber: displayIndex),
+          ),
         );
         break;
       case 'quiz':
-        // Random chọn 1 trong 5 ngân hàng câu hỏi mỗi lần vào Exam
-        final randomBankId = Random().nextInt(5) + 1; // 1-5
+        final randomBankId = Random().nextInt(5) + 1;
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -225,17 +266,15 @@ class _LessonCard extends StatelessWidget {
           ),
         );
         break;
-      default:
-        break;
     }
   }
 
-  /// Xóa số thứ tự cũ đã nhúng cứng trong title mock data (nếu có dạng "Bài N: ...")
-  /// để không hiển thị trùng lặp với displayIndex mới tính lại.
-  String _cleanTitle(String title) {
-    final match = RegExp(r'^Bài\s*\d+:\s*(.+)$').firstMatch(title);
-    return match != null ? match.group(1)!.trim() : title;
-  }
+  // /// Xóa số thứ tự cũ đã nhúng cứng trong title mock data (nếu có dạng "Bài N: ...")
+  // /// để không hiển thị trùng lặp với displayIndex mới tính lại.
+  // String _cleanTitle(String title) {
+  //   final match = RegExp(r'^Bài\s*\d+:\s*(.+)$').firstMatch(title);
+  //   return match != null ? match.group(1)!.trim() : title;
+  // }
 
   String _formatDuration(int ms) {
     final totalSeconds = ms ~/ 1000;
