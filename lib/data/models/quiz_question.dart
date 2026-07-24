@@ -7,7 +7,7 @@ class QuizQuestion {
   Id id = Isar.autoIncrement;
 
   @Index()
-  late int quizId;
+  late int bankId; // 1-5, đại diện cho ngân hàng câu hỏi
 
   late String question;
   String? imagePath;

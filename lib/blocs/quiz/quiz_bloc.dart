@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc_concurrency/bloc_concurrency.dart';
 import '../../data/repositories/quiz_repository.dart';
@@ -19,14 +18,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
 
   Future<void> _onStarted(QuizStarted event, Emitter<QuizState> emit) async {
     emit(state.copyWith(isLoading: true));
-    final questions = await repository.getQuestions(event.quizId);
-
-    // DEBUG - xóa sau khi kiểm tra xong
-    debugPrint('Quiz ${event.quizId}: ${questions.length} câu');
-    for (final q in questions.take(5)) {
-      debugPrint('  id=${q.id} image=${q.imagePath} audio=${q.audioPath}');
-    }
-
+    final questions = await repository.getQuestionsByBank(event.bankId);
     final savedAnswers = await repository.getSavedAnswers(
       questions.map((q) => q.id).toList(),
     );

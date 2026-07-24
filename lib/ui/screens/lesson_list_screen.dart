@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../injection.dart';
@@ -213,16 +215,17 @@ class _LessonCard extends StatelessWidget {
         );
         break;
       case 'quiz':
+        // Random chọn 1 trong 5 ngân hàng câu hỏi mỗi lần vào Exam
+        final randomBankId = Random().nextInt(5) + 1; // 1-5
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (_) =>
-                QuizScreen(quizId: lesson.courseId, title: 'Trắc nghiệm'),
+                QuizScreen(bankId: randomBankId, title: 'Trắc nghiệm'),
           ),
         );
         break;
       default:
-        // Audio/PDF/Image sẽ nối ở bước tiếp theo
         break;
     }
   }
