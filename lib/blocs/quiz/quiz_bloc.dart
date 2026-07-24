@@ -11,6 +11,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
   QuizBloc(this.repository) : super(const QuizState(isLoading: true)) {
     on<QuizStarted>(_onStarted);
     on<QuizPageChanged>((event, emit) {
+      if (isClosed) return;
       emit(state.copyWith(currentIndex: event.index));
     });
     on<QuizAnswerSelected>(_onAnswerSelected, transformer: sequential());
@@ -19,9 +20,13 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
   Future<void> _onStarted(QuizStarted event, Emitter<QuizState> emit) async {
     emit(state.copyWith(isLoading: true));
     final questions = await repository.getQuestionsByBank(event.bankId);
+    if (isClosed) return; // guard
+
     final savedAnswers = await repository.getSavedAnswers(
       questions.map((q) => q.id).toList(),
     );
+    if (isClosed) return; // guard
+
     emit(state.copyWith(
       questions: questions,
       answers: savedAnswers,
@@ -33,6 +38,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
     QuizAnswerSelected event,
     Emitter<QuizState> emit,
   ) async {
+    if (isClosed) return;
     emit(state.copyWith(
       answers: {...state.answers, event.questionId: event.selectedIndex},
     ));

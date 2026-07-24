@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../data/models/lesson_extensions.dart';
 import '../../injection.dart';
 import '../../blocs/search/search_bloc.dart';
 import '../../blocs/search/search_event.dart';
@@ -158,7 +159,7 @@ class _SearchResultTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: Icon(_iconFor(lesson.type), color: const Color(0xFF3D5CFF)),
-      title: Text(lesson.title),
+      title: Text(lesson.displayTitle),
       subtitle: Text(lesson.type),
       onTap: () {
         if (lesson.type == 'video') {

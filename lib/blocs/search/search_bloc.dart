@@ -23,12 +23,11 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
     }
 
     emit(const SearchLoading());
-
-    // Debounce đơn giản: đợi 300ms, nếu trong lúc đó có query mới,
-    // restartable() sẽ tự huỷ handler này trước khi tới dòng search thật
     await Future.delayed(const Duration(milliseconds: 300));
+    if (isClosed) return; // guard
 
     final results = await repository.searchLessons(query, limit: 50);
+    if (isClosed) return; // guard
 
     if (results.isEmpty) {
       emit(SearchEmpty(query));

@@ -28,6 +28,7 @@ class LessonListBloc extends Bloc<LessonListEvent, LessonListState> {
       limit: pageSize,
       type: _typeFilter,
     );
+    if (isClosed) return; // guard sau await
     emit(LessonListState(
       lessons: firstPage,
       hasReachedMax: firstPage.length < pageSize,
@@ -46,6 +47,7 @@ class LessonListBloc extends Bloc<LessonListEvent, LessonListState> {
       limit: pageSize,
       type: _typeFilter,
     );
+    if (isClosed) return; // guard sau await
     emit(state.copyWith(
       lessons: [...state.lessons, ...nextPage],
       hasReachedMax: nextPage.length < pageSize,

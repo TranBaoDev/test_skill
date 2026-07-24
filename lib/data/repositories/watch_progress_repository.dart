@@ -25,4 +25,12 @@ class WatchProgressRepository {
       await isar.watchProgress.put(progress);
     });
   }
+
+  Future<List<WatchProgress>> getRecentHistory({int limit = 30}) {
+    return isar.watchProgress
+        .where()
+        .sortByUpdatedAtDesc()
+        .limit(limit)
+        .findAll();
+  }
 }
