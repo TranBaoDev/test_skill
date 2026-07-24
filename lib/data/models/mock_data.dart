@@ -35,14 +35,14 @@ class MockLesson {
 
 class MockQuizQuestion {
   final int id;
-  final int quizId;
+  final int bankId;
   final String question;
   final String? imagePath;
   final String? audioPath;
   final List<String> options;
   MockQuizQuestion({
     required this.id,
-    required this.quizId,
+    required this.bankId,
     required this.question,
     this.imagePath,
     this.audioPath,

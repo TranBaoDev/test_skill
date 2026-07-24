@@ -7,10 +7,10 @@ abstract class QuizEvent extends Equatable {
 }
 
 class QuizStarted extends QuizEvent {
-  final int quizId;
-  const QuizStarted(this.quizId);
+  final int bankId;
+  const QuizStarted(this.bankId);
   @override
-  List<Object?> get props => [quizId];
+  List<Object?> get props => [bankId];
 }
 
 class QuizPageChanged extends QuizEvent {

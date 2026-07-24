@@ -8,15 +8,15 @@ import '../../blocs/quiz/quiz_state.dart';
 import '../../data/models/quiz_question.dart';
 
 class QuizScreen extends StatelessWidget {
-  final int quizId;
+  final int bankId;
   final String title;
 
-  const QuizScreen({super.key, required this.quizId, this.title = 'Quiz'});
+  const QuizScreen({super.key, required this.bankId, this.title = 'Quiz'});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => QuizBloc(getIt())..add(QuizStarted(quizId)),
+      create: (_) => QuizBloc(getIt())..add(QuizStarted(bankId)),
       child: _QuizView(title: title),
     );
   }

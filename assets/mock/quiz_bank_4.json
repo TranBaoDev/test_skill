@@ -1,0 +1,1954 @@
+{
+    "questions": [
+        {
+            "id": 30001,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 1: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_1.png",
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30002,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 2: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30003,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 3: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30004,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 4: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_4.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30005,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 5: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30006,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 6: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30007,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 7: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_7.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30008,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 8: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30009,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 9: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30010,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 10: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_10.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30011,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 11: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30012,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 12: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30013,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 13: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_3.png",
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30014,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 14: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30015,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 15: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30016,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 16: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_6.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30017,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 17: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30018,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 18: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30019,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 19: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_9.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30020,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 20: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30021,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 21: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30022,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 22: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_2.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30023,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 23: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30024,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 24: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30025,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 25: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_5.png",
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30026,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 26: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30027,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 27: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30028,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 28: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_8.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30029,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 29: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30030,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 30: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30031,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 31: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_1.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30032,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 32: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30033,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 33: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30034,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 34: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_4.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30035,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 35: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30036,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 36: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30037,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 37: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_7.png",
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30038,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 38: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30039,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 39: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30040,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 40: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_10.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30041,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 41: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30042,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 42: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30043,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 43: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_3.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30044,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 44: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30045,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 45: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30046,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 46: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_6.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30047,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 47: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30048,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 48: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30049,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 49: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_9.png",
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30050,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 50: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30051,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 51: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30052,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 52: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_2.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30053,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 53: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30054,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 54: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30055,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 55: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_5.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30056,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 56: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30057,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 57: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30058,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 58: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_8.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30059,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 59: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30060,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 60: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30061,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 61: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_1.png",
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30062,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 62: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30063,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 63: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30064,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 64: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_4.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30065,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 65: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30066,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 66: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30067,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 67: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_7.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30068,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 68: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30069,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 69: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30070,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 70: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_10.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30071,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 71: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30072,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 72: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30073,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 73: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_3.png",
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30074,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 74: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30075,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 75: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30076,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 76: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_6.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30077,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 77: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30078,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 78: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30079,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 79: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_9.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30080,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 80: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30081,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 81: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30082,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 82: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_2.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30083,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 83: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30084,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 84: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30085,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 85: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_5.png",
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30086,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 86: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30087,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 87: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30088,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 88: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_8.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30089,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 89: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30090,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 90: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30091,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 91: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_1.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30092,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 92: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30093,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 93: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30094,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 94: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_4.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30095,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 95: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30096,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 96: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30097,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 97: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_7.png",
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30098,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 98: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30099,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 99: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30100,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 100: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_10.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30101,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 101: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30102,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 102: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30103,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 103: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_3.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30104,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 104: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30105,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 105: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30106,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 106: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_6.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30107,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 107: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30108,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 108: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30109,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 109: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_9.png",
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30110,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 110: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30111,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 111: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30112,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 112: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_2.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30113,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 113: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30114,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 114: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30115,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 115: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_5.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30116,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 116: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30117,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 117: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30118,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 118: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_8.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30119,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 119: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30120,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 120: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30121,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 121: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_1.png",
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30122,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 122: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30123,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 123: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30124,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 124: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_4.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30125,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 125: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30126,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 126: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30127,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 127: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_7.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30128,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 128: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30129,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 129: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30130,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 130: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_10.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30131,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 131: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30132,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 132: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30133,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 133: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_3.png",
+            "audioPath": "assets/audios/quiz_3.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30134,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 134: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30135,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 135: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30136,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 136: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_6.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30137,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 137: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_7.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30138,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 138: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30139,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 139: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_9.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30140,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 140: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30141,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 141: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_1.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30142,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 142: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_2.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30143,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 143: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30144,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 144: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30145,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 145: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_5.png",
+            "audioPath": "assets/audios/quiz_5.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30146,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 146: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30147,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 147: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30148,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 148: Đáp án nào đúng?",
+            "imagePath": "assets/images/quiz_8.png",
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30149,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 149: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": "assets/audios/quiz_9.mp3",
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        },
+        {
+            "id": 30150,
+            "bankId": 4,
+            "question": "Ngân hàng 4 - Câu 150: Đáp án nào đúng?",
+            "imagePath": null,
+            "audioPath": null,
+            "options": [
+                "Đáp án A",
+                "Đáp án B",
+                "Đáp án C",
+                "Đáp án D"
+            ]
+        }
+    ]
+}

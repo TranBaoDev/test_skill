@@ -6,11 +6,11 @@ class QuizRepository {
   final Isar isar;
   QuizRepository(this.isar);
 
-  Future<List<QuizQuestion>> getQuestions(int quizId) {
+  Future<List<QuizQuestion>> getQuestionsByBank(int bankId) {
     return isar.quizQuestions
         .filter()
-        .quizIdEqualTo(quizId)
-        .sortByQuizId()
+        .bankIdEqualTo(bankId)
+        .sortByBankId()
         .findAll();
   }
 
