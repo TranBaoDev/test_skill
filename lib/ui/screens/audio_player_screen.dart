@@ -25,7 +25,7 @@ class AudioPlayerScreen extends StatelessWidget {
       create: (_) => AudioPlayerCubit(
         progressRepository: getIt(),
         lessonId: lesson.id,
-      )..load(lesson.contentPath),
+      )..load(lesson.contentPath, title),
       child: _AudioPlayerView(title: title, lessonId: lesson.id),
     );
   }

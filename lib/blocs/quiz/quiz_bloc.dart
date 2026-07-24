@@ -15,17 +15,21 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
       emit(state.copyWith(currentIndex: event.index));
     });
     on<QuizAnswerSelected>(_onAnswerSelected, transformer: sequential());
+    on<QuizSubmitted>((event, emit) {
+      if (isClosed) return;
+      emit(state.copyWith(isSubmitted: true));
+    });
   }
 
   Future<void> _onStarted(QuizStarted event, Emitter<QuizState> emit) async {
     emit(state.copyWith(isLoading: true));
     final questions = await repository.getQuestionsByBank(event.bankId);
-    if (isClosed) return; // guard
+    if (isClosed) return;
 
     final savedAnswers = await repository.getSavedAnswers(
       questions.map((q) => q.id).toList(),
     );
-    if (isClosed) return; // guard
+    if (isClosed) return;
 
     emit(state.copyWith(
       questions: questions,

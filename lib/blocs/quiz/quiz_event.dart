@@ -27,3 +27,7 @@ class QuizAnswerSelected extends QuizEvent {
   @override
   List<Object?> get props => [questionId, selectedIndex];
 }
+
+class QuizSubmitted extends QuizEvent {
+  const QuizSubmitted();
+}

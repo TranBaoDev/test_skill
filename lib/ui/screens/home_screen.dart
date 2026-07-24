@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_skill/ui/screens/search_screen.dart';
 import '../../data/models/ui_models.dart';
+import 'bookmark_screen.dart';
 import 'explore_screen.dart';
 import 'history_screen.dart';
 
@@ -114,6 +115,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontSize: 24,
                     fontWeight: FontWeight.w600,
                     color: Color(0xFF1B1D28))),
+          ),
+          IconButton(
+            icon: const Icon(Icons.bookmark_border_rounded,
+                color: Color(0xFF1B1D28)),
+            onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (_) => const BookmarkScreen())),
           ),
           IconButton(
             icon: const Icon(Icons.history_rounded, color: Color(0xFF1B1D28)),

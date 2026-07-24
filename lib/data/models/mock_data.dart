@@ -40,6 +40,7 @@ class MockQuizQuestion {
   final String? imagePath;
   final String? audioPath;
   final List<String> options;
+  final int correctIndex;
   MockQuizQuestion({
     required this.id,
     required this.bankId,
@@ -47,5 +48,6 @@ class MockQuizQuestion {
     this.imagePath,
     this.audioPath,
     required this.options,
+    required this.correctIndex,
   });
 }
