@@ -13,4 +13,5 @@ class QuizQuestion {
   String? imagePath;
   String? audioPath;
   late List<String> options;
+  late int correctIndex; // index đáp án đúng trong options
 }

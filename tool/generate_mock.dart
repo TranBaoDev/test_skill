@@ -37,7 +37,7 @@ void main() {
       150; // 5 x 150 = 750 câu, nằm trong khoảng 500-1000 theo yêu cầu
 
   for (var bank = 1; bank <= bankCount; bank++) {
-    final idOffset = (bank - 1) * 10000; // đảm bảo ID không đụng giữa các file
+    final idOffset = (bank - 1) * 10000;
     final questions = List.generate(questionsPerBank, (i) {
       final globalIndex = idOffset + i + 1;
       return {
@@ -49,6 +49,8 @@ void main() {
         'audioPath':
             i % 4 == 0 ? 'assets/audios/quiz_${(i % 10) + 1}.mp3' : null,
         'options': ['Đáp án A', 'Đáp án B', 'Đáp án C', 'Đáp án D'],
+        'correctIndex':
+            random.nextInt(4), // random đáp án đúng 0-3 cho mock data
       };
     });
 

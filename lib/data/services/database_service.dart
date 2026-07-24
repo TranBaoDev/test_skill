@@ -53,7 +53,8 @@ class DatabaseService {
             ..question = q.question
             ..imagePath = q.imagePath
             ..audioPath = q.audioPath
-            ..options = q.options)
+            ..options = q.options
+            ..correctIndex = q.correctIndex)
           .toList();
 
       await isar.courses.putAll(courseModels);
@@ -99,6 +100,7 @@ MockData _parseJsonIsolate(Map<String, dynamic> input) {
         imagePath: q['imagePath'],
         audioPath: q['audioPath'],
         options: List<String>.from(q['options']),
+        correctIndex: q['correctIndex'],
       ));
     }
   }

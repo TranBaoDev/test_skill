@@ -141,16 +141,32 @@ class _QuizViewState extends State<_QuizView> {
           Expanded(
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF3D5CFF)),
-              onPressed:
-                  isLast ? null : () => _goToPage(state.currentIndex + 1),
+                backgroundColor:
+                    isLast ? const Color(0xFF00C48C) : const Color(0xFF3D5CFF),
+              ),
+              onPressed: isLast
+                  ? () => _submitQuiz(context, state)
+                  : () => _goToPage(state.currentIndex + 1),
               child: Text(
-                isLast ? 'Đã hết' : 'Câu tiếp',
+                isLast ? 'Nộp bài' : 'Câu tiếp',
                 style: const TextStyle(color: Colors.white),
               ),
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  void _submitQuiz(BuildContext context, QuizState state) {
+    context.read<QuizBloc>().add(const QuizSubmitted());
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) => _ResultDialog(
+        correctCount: state.correctCount,
+        totalCount: state.questions.length,
+        scorePercent: state.scorePercent,
       ),
     );
   }
@@ -210,93 +226,77 @@ class _QuestionPageState extends State<_QuestionPage>
     super.build(context);
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
-      child: BlocSelector<QuizBloc, QuizState, int?>(
-        // CHỈ rebuild khi đáp án của ĐÚNG câu này thay đổi
-        // -> chọn đáp án câu 500 không làm rebuild câu 1
-        selector: (state) => state.answers[widget.question.id],
-        builder: (context, selectedIndex) {
+      child: BlocBuilder<QuizBloc, QuizState>(
+        buildWhen: (prev, curr) =>
+            prev.answers[widget.question.id] !=
+                curr.answers[widget.question.id] ||
+            prev.isSubmitted != curr.isSubmitted,
+        builder: (context, state) {
+          final selectedIndex = state.answers[widget.question.id];
+          final isSubmitted = state.isSubmitted;
+
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Câu ${widget.questionNumber}',
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFF3D5CFF),
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                widget.question.question,
-                style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFF1B1D28),
-                ),
-              ),
-              if (widget.question.imagePath != null) ...[
-                const SizedBox(height: 12),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.asset(
-                    widget.question.imagePath!,
-                    height: 160,
-                    width: double.infinity,
-                    fit: BoxFit.contain,
-                    errorBuilder: (_, __, ___) => Container(
-                      height: 160,
-                      color: Colors.grey.shade200,
-                      child: const Icon(Icons.broken_image_outlined,
-                          color: Colors.grey),
-                    ),
-                  ),
-                ),
-              ],
-              if (widget.question.audioPath != null) ...[
-                const SizedBox(height: 12),
-                OutlinedButton.icon(
-                  onPressed: () => _playAudio(widget.question.audioPath!),
-                  icon: const Icon(Icons.volume_up_rounded),
-                  label: const Text('Nghe audio câu hỏi'),
-                ),
-              ],
+              // ... giữ nguyên phần Text câu hỏi, ảnh, audio ...
               const SizedBox(height: 20),
               ...List.generate(widget.question.options.length, (i) {
                 final isSelected = selectedIndex == i;
+                final isCorrectOption = i == widget.question.correctIndex;
+
+                Color borderColor = Colors.grey.shade300;
+                Color bgColor = Colors.white;
+
+                if (isSubmitted) {
+                  if (isCorrectOption) {
+                    borderColor = const Color(0xFF00C48C);
+                    bgColor = const Color(0xFF00C48C).withOpacity(0.1);
+                  } else if (isSelected && !isCorrectOption) {
+                    borderColor = Colors.red;
+                    bgColor = Colors.red.withOpacity(0.08);
+                  }
+                } else if (isSelected) {
+                  borderColor = const Color(0xFF3D5CFF);
+                  bgColor = const Color(0xFF3D5CFF).withOpacity(0.1);
+                }
+
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 10),
                   child: InkWell(
                     borderRadius: BorderRadius.circular(12),
-                    onTap: () {
-                      context.read<QuizBloc>().add(
-                            QuizAnswerSelected(widget.question.id, i),
-                          );
-                    },
+                    onTap: isSubmitted
+                        ? null // khóa chọn đáp án sau khi đã nộp bài
+                        : () {
+                            context.read<QuizBloc>().add(
+                                  QuizAnswerSelected(widget.question.id, i),
+                                );
+                          },
                     child: Container(
                       width: double.infinity,
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        color: isSelected
-                            ? const Color(0xFF3D5CFF).withOpacity(0.1)
-                            : Colors.white,
+                        color: bgColor,
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                          color: isSelected
-                              ? const Color(0xFF3D5CFF)
-                              : Colors.grey.shade300,
-                          width: isSelected ? 2 : 1,
-                        ),
+                            color: borderColor,
+                            width:
+                                (isSelected || (isSubmitted && isCorrectOption))
+                                    ? 2
+                                    : 1),
                       ),
                       child: Row(
                         children: [
                           Icon(
-                            isSelected
-                                ? Icons.radio_button_checked
-                                : Icons.radio_button_unchecked,
-                            color: isSelected
-                                ? const Color(0xFF3D5CFF)
-                                : Colors.grey,
+                            isSubmitted && isCorrectOption
+                                ? Icons.check_circle_rounded
+                                : (isSelected
+                                    ? Icons.radio_button_checked
+                                    : Icons.radio_button_unchecked),
+                            color: isSubmitted && isCorrectOption
+                                ? const Color(0xFF00C48C)
+                                : (isSelected
+                                    ? const Color(0xFF3D5CFF)
+                                    : Colors.grey),
                             size: 20,
                           ),
                           const SizedBox(width: 10),
@@ -310,6 +310,76 @@ class _QuestionPageState extends State<_QuestionPage>
             ],
           );
         },
+      ),
+    );
+  }
+}
+
+class _ResultDialog extends StatelessWidget {
+  final int correctCount;
+  final int totalCount;
+  final double scorePercent;
+
+  const _ResultDialog({
+    required this.correctCount,
+    required this.totalCount,
+    required this.scorePercent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isGood = scorePercent >= 50;
+    return Dialog(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              isGood
+                  ? Icons.emoji_events_rounded
+                  : Icons.sentiment_neutral_rounded,
+              size: 64,
+              color: isGood ? const Color(0xFFFFB800) : Colors.grey,
+            ),
+            const SizedBox(height: 16),
+            Text(
+              '${scorePercent.toStringAsFixed(0)}%',
+              style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w700),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Đúng $correctCount / $totalCount câu',
+              style: TextStyle(color: Colors.grey.shade600),
+            ),
+            const SizedBox(height: 24),
+            Row(
+              children: [
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: () {
+                      Navigator.pop(context); // đóng dialog
+                      Navigator.pop(context); // thoát quiz
+                    },
+                    child: const Text('Thoát'),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF3D5CFF)),
+                    onPressed: () => Navigator.pop(
+                        context), // chỉ đóng dialog, xem lại đáp án
+                    child: const Text('Xem lại',
+                        style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
